@@ -1,0 +1,13 @@
+loading app ryu.app.simple_switch_13
+loading app ryu.controller.ofp_handler
+instantiating app ryu.app.simple_switch_13 of SimpleSwitch13
+instantiating app ryu.controller.ofp_handler of OFPHandler
+packet in 3 e6:04:9a:0b:77:4f 33:33:00:00:00:02 2
+packet in 2 22:cc:03:9f:e5:58 33:33:00:00:00:02 2
+packet in 3 22:cc:03:9f:e5:58 33:33:00:00:00:02 2
+packet in 1 56:be:28:fa:63:80 33:33:00:00:00:fb 2
+packet in 2 22:cc:03:9f:e5:58 33:33:00:00:00:fb 2
+packet in 3 22:cc:03:9f:e5:58 33:33:00:00:00:fb 2
+packet in 3 e6:04:9a:0b:77:4f 33:33:00:00:00:fb 2
+packet in 2 b2:3f:4d:4c:50:fa 33:33:00:00:00:fb 3
+packet in 1 b2:3f:4d:4c:50:fa 33:33:00:00:00:fb 2
