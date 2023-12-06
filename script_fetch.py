@@ -1,14 +1,16 @@
 
+
 import datetime
 import subprocess
-
+import time
  
 
 def log_script_output(script_path, log_file_path):
 
     with open(log_file_path, 'w') as log_file:
 
-        print("Entere")
+        print("Starting the controller....")
+	time.sleep(5)
 	try:
 
             # Run the script and redirect stdout and stderr to the log file
@@ -20,6 +22,7 @@ def log_script_output(script_path, log_file_path):
             # Handle any exceptions that might occur
 
             log_file.write( str(e))
+    print("Executing and fetching the details.....")
 
  
 

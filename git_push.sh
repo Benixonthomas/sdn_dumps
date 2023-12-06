@@ -4,6 +4,8 @@
 
 # Set the path to your local Git repository
 
+echo "Pushing the files to GIT"
+
 local_repo_path="/home/student/git_repo/sdn_dumps"
 
 # Set the name of the file you want to push
