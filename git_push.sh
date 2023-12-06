@@ -15,7 +15,7 @@ local_repo_path="/home/student/git_repo/sdn_dumps/dumps"
 
 # Navigate to the local repository
 
-cd "$local_repo_path" || exit
+#cd "$local_repo_path" || exit
 
 # Add the file to the staging area
 
@@ -28,4 +28,4 @@ git commit -m "Adding the files"
 
 # Push the changes to the remote repository
 
-git push  -u origin
+git push -u origin
