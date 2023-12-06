@@ -1,0 +1,4 @@
+  File "/home/student/git_repo/sdn_dumps/topo_script.py", line 38
+    os.popen("chmod 777 {}".format(log_file_path)")
+                                                  ^
+SyntaxError: EOL while scanning string literal

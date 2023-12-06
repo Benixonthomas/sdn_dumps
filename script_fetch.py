@@ -24,6 +24,7 @@ def log_script_output(script_path, log_file_path):
             log_file.write( str(e))
     print("Executing and fetching the details.....")
     os.popen("sudo chown student: {}".format(log_file_path))
+    os.popen("chmod 777 {}".format(log_file_path))
  
 
 if __name__ == "__main__":
