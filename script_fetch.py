@@ -3,7 +3,7 @@
 import datetime
 import subprocess
 import time
- 
+import os 
 
 def log_script_output(script_path, log_file_path):
 
@@ -15,7 +15,7 @@ def log_script_output(script_path, log_file_path):
 
             # Run the script and redirect stdout and stderr to the log file
 
-            subprocess.call(["python", script_path], stdout=log_file, stderr=subprocess.STDOUT)
+            subprocess.call(["sudo","python", script_path], stdout=log_file, stderr=subprocess.STDOUT)
 
         except Exception as e:
 
@@ -23,7 +23,7 @@ def log_script_output(script_path, log_file_path):
 
             log_file.write( str(e))
     print("Executing and fetching the details.....")
-
+    os.popen("sudo chown student: {}".format(log_file_path))
  
 
 if __name__ == "__main__":

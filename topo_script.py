@@ -34,6 +34,7 @@ if __name__ == '__main__':
     with open(filename,"w") as log_file:
         cmd1= ["cmd"] + cmd.split() + ["&"]
 	ryu_process = subprocess.Popen(cmd,stdout=log_file,stderr=subprocess.STDOUT,stdin=subprocess.PIPE,shell=True,close_fds=True)
+    os.popen("sudo chown student: {}".format(filename))
     print("Waiting for the controller to start ...")
     time.sleep(10)    
     topo = CustomTopology()
