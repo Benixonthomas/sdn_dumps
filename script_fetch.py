@@ -15,7 +15,7 @@ def log_script_output(script_path, log_file_path):
 
             # Run the script and redirect stdout and stderr to the log file
 
-            subprocess.call(["sudo","python", script_path], stdout=log_file, stderr=subprocess.STDOUT)
+            subprocess.call(["python", script_path], stdout=log_file, stderr=subprocess.STDOUT)
 
         except Exception as e:
 
